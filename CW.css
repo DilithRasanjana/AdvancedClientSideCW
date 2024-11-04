@@ -64,6 +64,13 @@ span{
     border-bottom: 3px solid white;
 }
 
+/*Negation Pseudo Class*/
+.navbar a:not(.active):hover {
+    color: rgb(192, 5, 95);
+    border-bottom: 2px dashed #ffffff;
+}
+
+
 .introduction{
     width: 100%;
     min-height: 100vh;
