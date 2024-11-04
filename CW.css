@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&display=swap');
-/*Home Page CSS Style*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Passion+One:wght@400;700;900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hedvig+Letters+Sans&family=Passion+One:wght@400;700;900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hedvig+Letters+Sans&family=Passion+One:wght@400;700;900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+/*Home page CSS Style*/
 *{
     margin: 0;
     padding: 0;
@@ -14,32 +18,37 @@
     left:0;
     width:100%;
     padding:20px 12%;
-    background-color: rgb(139, 139, 139);
+    background-color: #254E58;
     backdrop-filter:blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    /*Garadient colours for background*/
+    background: linear-gradient(90deg, #254E58, #6bb9a5); /*horizontal gradient*/
+    color:white;
 }
 .logo{
     font-size: 25px;
+    font-family: "Poppins", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: 600;
     transition: 0.3s ease;
 }
 .logo:hover{
-    color: rgb(4, 249, 192);
-    text-shadow:0 0 25px rgb(4, 249, 192),
-                0 0 50px rgb(4, 249, 192);
+    color: rgb(192, 5, 95);
+    text-shadow:0 0 25px rgb(192, 5, 95),
+                0 0 50px rgb(192, 5, 95);
     transform: scale (1.1);
 }
 span{
-    color: rgb(4, 249, 192);
+    color: rgb(192, 5, 95);
 }
 
 
 .navbar a{
     font-size:15x ;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     color: white;
     margin: 0 20px;
@@ -47,25 +56,23 @@ span{
     transition: 0.3s ease;
     
 }
-.menu-bar{
-    display: none;
-}
+
 
 .navbar a:hover,
 .navbar a.active {
-    color:rgb(4, 249, 192);
-    border-bottom: 3px solid red;
+    color:rgb(192, 5, 95);
+    border-bottom: 3px solid white;
 }
 
 .introduction{
     width: 100%;
     min-height: 100vh;
-    background: rgb(0, 0, 0);
+    background:#88BDBC;
     display: flex;
     align-items: center;
     gap: 30px;
     padding: 30px 12% 0;
-    color: rgb(255, 255, 255);
+
    
 }
 
@@ -100,7 +107,7 @@ img{
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: scale(1.05); /* Scales the image to 105% on hover */
     opacity: 0.9; /* Slightly reduces opacity for a subtle effect */
-    box-shadow: 0px 8px 100px rgba(255, 3, 33, 0.7);
+    box-shadow: 0px 8px 100px rgb(192, 5, 95);
 }
 /*Bounce animation for Image*/
 @keyframes bounce {
@@ -111,7 +118,7 @@ img{
 .img img {
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(130, 10, 24, 0.5);
+    box-shadow: 0px 4px 10px rgb(192, 5, 95);
     animation: bounce 2s infinite; /*bounce animation*/
 }
 
@@ -120,7 +127,8 @@ img{
     bottom: 0;
     width: 100%;
     padding:5px 0;
-    background-color:rgb(139, 139, 139);
+    background: linear-gradient(90deg, #254E58, #6bb9a5); /*horizontal gradient*/
+    color:white;
 }
 
 .footer .social{
@@ -133,20 +141,20 @@ img{
 .footer .social a{
     font-size: 24px;
     color:white;
-    border:2px sold rgb(4, 249, 192);
+    border:2px sold rgb(192, 5, 95);
     width:40px;
     line-height:38px;
     display:inline-block;
     text-align: center;
     border-radius: 50%;
     margin:0 8px;
-    box-shadow:inset 0 0 10px rgb(4, 249, 192), o o 10 px rgb(4, 249, 192);
+    box-shadow:inset 0 0 10px rgb(192, 5, 95), o o 10 px rgb(192, 5, 95);
     transition: 0.3s ease;
 }
 .footer .social a:hover{
     transform: scale(1.2) translateY(-10);
-    color: rgb(4, 249, 192);
-    border: 2px solid rgb(4, 249, 192);
+    color: rgb(192, 5, 95);
+    border: 2px solid rgb(192, 5, 95);
 }
 .footer .copyright{
     margin-top: 15px;
@@ -157,7 +165,7 @@ img{
 /* Contact Form CSS Style*/
 .contact{
     min-height: 100vh;
-    background-color:rgb(186, 184, 146);
+    background-color:#88BDBC;
     padding: 50px;
     text-align: center;
 }
@@ -169,8 +177,9 @@ img{
 .container h2{
     font-size: 36px;
     margin-bottom: 40px;   
-    color: white;
+    color: rgb(216, 111, 12);
     padding-top: 50px;
+    font-family: "Hedvig Letters Sans", sans-serif;
 
 }
 .contact-wrapper{
@@ -180,12 +189,14 @@ img{
 }
 .contact-form{
     text-align: left;
+    font-family: "Hedvig Letters Sans", sans-serif;
 
 }
 .contact-form h3{
     font-size: 24px;
     margin-bottom: 20px;
-    color: rgb(255, 255, 255);
+    color: black;
+    font-family: "Hedvig Letters Sans", sans-serif;
 }
 .form-group{
     margin-bottom: 20px;
@@ -196,8 +207,8 @@ input, textarea {
     padding:12px;
     border-radius: 8px;
     border:none;
-    background-color: rgb(243, 217, 185);
-    color:#bf70ea;
+    background-color: white;
+    color:black;
 }
 
 input:focus,
@@ -208,7 +219,7 @@ textarea:focus{
 button{
     display:inline-block;
     padding:12px 24px;
-    background-color: #820a18;
+    background-color:#F8E9A1;
     color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
@@ -221,28 +232,40 @@ button:hover{
 .contact-info{
     text-align: left;
     gap: 300px;
+    
 }
 .contact-info h3{
     font: size 24px;
     margin-bottom: 20px;
-    color: rgb(255, 255, 255);
+    color: black;
+    font-family: "Hedvig Letters Sans", sans-serif;
 }
 .contact-info p{
     margin-bottom: 10px;
-    color: rgb(255, 255, 255);
+    color: black;
+    font-family: "Hedvig Letters Sans", sans-serif;
 }
 .contact-info i{
     color: rgb(15, 195, 87);
     margin-right: 10px;
 }
 
-@media  screen and (max-width:768px) {/*media query for small screen(Contact Page)*/
+@media  screen and (max-width:768px) {media query for small screen
     .container{
         padding: 20px;
     }
     .contact-wrapper{
         grid-template-columns: 1fr;   
     }  
+    .introduction-1 h3{
+        padding-top: 80px;
+        font-size: 30px;
+    }
+    .introduction-1 h1{
+        font-size: 30px;
+
+    }
+    
     .about-heading h1{
         font-size: 45px;
         margin-top: 30px;
@@ -287,8 +310,8 @@ button:hover{
 
 .botton-1{
     padding: 15px 28px;
-    background-color:rgb(206, 19, 19);
-    color:white ;
+    background-color:#F8E9A1;
+    color:black ;
     border: 2px solid transparent;
     border-radius:8px;
     font-size:18px;
@@ -300,12 +323,12 @@ button:hover{
 .botton-1:hover{
     background-color: white;
     color:rgb(0, 0, 0);
-    border: 2px solid rgb(4, 249, 192);
+    border: 2px solid rgb(192, 5, 95);
 }
 
 /*About CSS Styles*/
 .About{
-    color: #f771f2;
+    background-color: #88BDBC;
     overflow:hidden;
 }
 .about-image{
@@ -316,21 +339,30 @@ button:hover{
 }
 
 .about-image img{
+    box-shadow: 0px 4px 10px rgb(18, 6, 88);
     border-radius: 50%;
     width:580px ;
     flex:1;
     margin: auto;
     height: auto;   
 }
+.about-image img:hover{
+    box-shadow: 0px 8px 100px rgb(18, 6, 88);
+
+}
+
 .about-heading{
-    color:#ff6347;
+    color:rgb(18, 6, 88);
     font-size: 35px;
     text-align:center;
     margin-top:25px;
+    font-family: "Hedvig Letters Sans", sans-serif;
+
 
 }
 .about-heading h1{
     margin-top: 80px;
+    font-family: "Hedvig Letters Sans", sans-serif;
 } 
 
 .about-container{
@@ -352,16 +384,18 @@ button:hover{
     font-size: 38px;
     margin-bottom: 20px;
     color: #333;
+    font-family: "Hedvig Letters Sans", sans-serif;
 }
 .about-content p{
     font-size: 24px;
     line-height:1.5 ;
     margin-bottom:40px;
     color:#666;
+    font-family: "Hedvig Letters Sans", sans-serif;
 }
 .about-content button{
     display: inline block;
-    background-color: #ff4500;
+    background-color: rgb(18, 6, 88);
     color: #fff;
     padding: 12px 24px;
     border-radius: 5px;
@@ -409,6 +443,7 @@ button:hover{
 
 .hobbies-container{
     width:100%;
+    background-color:#88BDBC;
 
 }
 .hobbies-container .row{
@@ -422,27 +457,28 @@ button:hover{
 }
 .hobbies-container .row .hobbies-header h1{
     padding-top: 85px;
-    font-size: 45px;
-    color:#e19c30;
+    font-size: 55px;
+    color:#000000;
+    
 
 }
 .hobbies-container .row .hobbies-header p{
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
-    color: #6e6e6e;
+    color: #000000;
     margin: auto;
 
 }
 .hobby-content .card {
     flex: 1 1 250px; /* Adjusts card width and allows wrapping */
-    max-width: 250px;
+    max-width: 300px;
     margin: 20px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    text-align: center;
+    background-color: #ffffff;
+    text-align:center;
     border-radius: 8px; /* Rounded corners */
-    padding: 15px;
+    padding: 50px 0px;
 }
 
 .hobby-content .card img{
@@ -461,15 +497,16 @@ button:hover{
     font-size: 18px;
 }
 .hobby-content h4{
-    font-size: 20px;
+    font-size: 24px;
     color:#333;
     margin-bottom: 10px;
 }
 .hobby-content .card p{
-    font-size: 15px;
+    font-size: 19px;
     color: #6e6e6e;
     line-height: 1.5;
     padding: 10px;
+    text-align: justify;
 }
 
 
